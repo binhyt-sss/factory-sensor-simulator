@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  sensor-simulator:
+    build: .
+    container_name: sensor-simulator
+    environment:
+      - PYTHONPATH=/app
+    # volumes:
+    #   - .:/app
+    command: ["--tokens-file", "tokens.json", "--mixers", "2", "--cnc", "2", "--hydraulic", "1", "--conveyor", "1", "--pump", "2", "--interval", "1"] 

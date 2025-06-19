@@ -1,0 +1,140 @@
+# Danh sách Máy và Cảm biến trong Hệ thống Mô phỏng
+
+## Số lượng và Loại Máy Mặc định
+- MÁY TRỘN (MIXER): 5 máy
+- MÁY CNC (CNC MACHINE): 10 máy
+- MÁY ÉP THỦY LỰC (HYDRAULIC PRESS): 7 máy
+- HỆ THỐNG BĂNG TẢI (CONVEYOR SYSTEM): 8 máy
+- HỆ THỐNG BƠM (PUMP SYSTEM): 6 máy
+
+## Tổng cộng: 36 máy
+
+## Chi tiết về Máy và Cảm biến
+
+### 1. MÁY TRỘN (MIXER)
+Mã nhận dạng: MIXER_001, MIXER_002, MIXER_003, MIXER_004, MIXER_005
+Các cảm biến:
+- Cảm biến nhiệt độ:
+  * RTD PT100 (đơn vị: °C)
+  * Cặp nhiệt điện loại K (đơn vị: °C)
+  * Cảm biến nhiệt hồng ngoại (đơn vị: °C)
+- Cảm biến rung/chuyển động:
+  * Gia tốc kế áp điện (đơn vị: mm/s)
+  * Bộ mã hóa quay (đơn vị: RPM)
+  * Con quay hồi chuyển (đơn vị: rad/s)
+- Cảm biến âm thanh:
+  * Micrô công nghiệp (đơn vị: dB)
+- Cảm biến mức:
+  * Cảm biến mức điện dung (đơn vị: %)
+  * Cảm biến mức siêu âm (đơn vị: %)
+- Giám sát điện:
+  * Biến dòng (đơn vị: A)
+  * Đồng hồ đo công suất (đơn vị: kW)
+
+### 2. MÁY CNC (CNC MACHINE)
+Mã nhận dạng: CNC_MACHINE_001 đến CNC_MACHINE_010
+Các cảm biến:
+- Cảm biến nhiệt độ:
+  * RTD PT100 (đơn vị: °C)
+  * Cặp nhiệt điện loại J (đơn vị: °C)
+  * Cảm biến chụp ảnh nhiệt (đơn vị: °C)
+- Cảm biến rung:
+  * Gia tốc kế MEMS (đơn vị: mm/s²)
+  * Đầu dò tiệm cận (đơn vị: mm)
+  * Cảm biến biến dạng (đơn vị: µε)
+- Cảm biến vị trí:
+  * Bộ mã hóa tuyến tính (đơn vị: mm)
+  * Bộ mã hóa tuyệt đối (đơn vị: degrees)
+  * LVDT (đơn vị: mm)
+- Cảm biến áp suất/lưu lượng:
+  * Bộ biến đổi áp suất (đơn vị: bar)
+  * Lưu lượng kế điện từ (đơn vị: L/min)
+  * Cảm biến áp suất vi sai (đơn vị: bar)
+- Cảm biến mức:
+  * Công tắc mức phao (đơn vị: binary)
+  * Cảm biến mức điện dung (đơn vị: %)
+- Cảm biến quang học:
+  * Cảm biến khoảng cách laser (đơn vị: mm)
+  * Cảm biến quang điện (đơn vị: binary)
+- Cảm biến âm thanh:
+  * Cảm biến phát xạ âm thanh (đơn vị: dB)
+
+### 3. MÁY ÉP THỦY LỰC (HYDRAULIC PRESS)
+Mã nhận dạng: HYDRAULIC_PRESS_001 đến HYDRAULIC_PRESS_007
+Các cảm biến:
+- Cảm biến áp suất:
+  * Bộ biến đổi áp suất biến dạng (đơn vị: bar)
+  * Cảm biến áp suất áp điện (đơn vị: bar)
+  * Đồng hồ ống Bourdon (đơn vị: bar)
+- Cảm biến nhiệt độ:
+  * RTD PT100 (đơn vị: °C)
+  * Thermistor (đơn vị: °C)
+  * Công tắc nhiệt độ lưỡng kim (đơn vị: °C)
+- Cảm biến vị trí:
+  * LVDT (đơn vị: mm)
+  * Cảm biến vị trí từ biến (đơn vị: mm)
+  * Công tắc giới hạn (đơn vị: binary)
+- Cảm biến lực/tải:
+  * Loadcell (đơn vị: kg)
+  * Cảm biến biến dạng (đơn vị: µε)
+  * Cảm biến lực áp điện (đơn vị: N)
+- Cảm biến rung:
+  * Gia tốc kế công nghiệp (đơn vị: mm/s²)
+  * Cảm biến vận tốc (đơn vị: mm/s)
+
+### 4. HỆ THỐNG BĂNG TẢI (CONVEYOR SYSTEM)
+Mã nhận dạng: CONVEYOR_SYSTEM_001 đến CONVEYOR_SYSTEM_008
+Các cảm biến:
+- Cảm biến tốc độ/chuyển động:
+  * Máy phát tốc độ kế (đơn vị: RPM)
+  * Cảm biến hiệu ứng Hall (đơn vị: binary)
+  * Bộ mã hóa tăng dần (đơn vị: pulses/rev)
+- Cảm biến phát hiện:
+  * Cảm biến quang điện (đơn vị: binary)
+  * Cảm biến tiệm cận cảm ứng (đơn vị: binary)
+  * Máy quét laser (đơn vị: mm)
+  * Cảm biến siêu âm (đơn vị: mm)
+- Cảm biến tải/trọng lượng:
+  * Loadcell cân băng tải (đơn vị: kg)
+  * Cảm biến biến dạng (đơn vị: µε)
+- Cảm biến an toàn:
+  * Công tắc dừng khẩn cấp (đơn vị: binary)
+  * Rèm ánh sáng (đơn vị: binary)
+  * Thảm an toàn (đơn vị: binary)
+
+### 5. HỆ THỐNG BƠM (PUMP SYSTEM)
+Mã nhận dạng: PUMP_SYSTEM_001 đến PUMP_SYSTEM_006
+Các cảm biến:
+- Cảm biến lưu lượng:
+  * Lưu lượng kế điện từ (đơn vị: L/min)
+  * Lưu lượng kế tuabin (đơn vị: L/min)
+  * Lưu lượng kế siêu âm (đơn vị: L/min)
+- Cảm biến áp suất:
+  * Đồng hồ áp suất Bourdon (đơn vị: bar)
+  * Cảm biến áp suất màng (đơn vị: bar)
+  * Máy phát áp suất vi sai (đơn vị: bar)
+- Cảm biến mức:
+  * Cảm biến mức radar (đơn vị: %)
+  * Cảm biến mức thủy tĩnh (đơn vị: %)
+  * Công tắc mức phao (đơn vị: binary)
+- Cảm biến nhiệt độ:
+  * RTD PT100 (đơn vị: °C)
+- Cảm biến rung:
+  * Gia tốc kế MEMS (đơn vị: mm/s²)
+  * Đầu dò tiệm cận (đơn vị: mm)
+
+## Tổng Số Cảm Biến
+
+### Tổng số máy: 36 máy
+- 5 Máy trộn x 11 cảm biến = 55 cảm biến
+- 10 Máy CNC x 17 cảm biến = 170 cảm biến
+- 7 Máy ép thủy lực x 14 cảm biến = 98 cảm biến
+- 8 Hệ thống băng tải x 11 cảm biến = 88 cảm biến
+- 6 Hệ thống bơm x 11 cảm biến = 66 cảm biến
+
+### Tổng số cảm biến trong toàn bộ hệ thống: 477 cảm biến
+
+## Lưu ý
+- Mỗi máy có mã định danh duy nhất (ví dụ: MIXER_001)
+- Tất cả cảm biến của một máy đều gửi dữ liệu lên ThingsBoard sử dụng cùng một token thiết bị
+- Để gửi dữ liệu từ các máy khác nhau đến ThingsBoard với các token khác nhau, sử dụng tệp tokens.json
